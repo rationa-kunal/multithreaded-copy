@@ -27,7 +27,7 @@ cmd_split(file=FROM+FILE, size=TEMP_SIZE, prefix=PREFIX)
 
 
 # ls
-dir = FROM
+dir = '.'
 files = os.listdir(dir)
 ffiles = []
 for f in files:
@@ -50,6 +50,6 @@ combine(file=FILE, to=TO, prefix=PREFIX)
 
 
 # removing temp files
-remove_files(src=FROM, prefix=PREFIX)
+remove_files(src='', prefix=PREFIX)
 remove_files(src=TO, prefix=PREFIX)
 
